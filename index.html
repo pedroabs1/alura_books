@@ -5,11 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alura Books</title>
-        <link rel="stylesheet" href="reset.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"> <!---swipe.js--->
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
 
     </head>
@@ -35,7 +35,7 @@
                     <a href="#" class="lista-menu__link">Business</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Desing & UX</a>
+                    <a href="#" class="lista-menu__link">Design & UX</a>
                 </li>
             </ul>
             <img src="img/logo.svg" alt="logo" class="container__imagem">
@@ -49,10 +49,10 @@
         <section class="banner">
             <h2 class="banner__titulo">Já sabe por onde começar?</h2>
             <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-            <input class="banner__pesquisa" type=search placeholder="Qual será sua pesquisa?">
+            <input class="banner__pesquisa" type=search placeholder="Qual será sua proxima leitura?">
         </section>
         <section class="carrossel">
-            <h2 class="carrossel__titulo">Nossos lançamentos</h2>
+            <h2 class="carrossel__titulo">Ultimos lançamentos</h2>
 
             <!-- Slider main container -->
             <div class="swiper">
@@ -97,7 +97,6 @@
                     <ul class="botões">
                         <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
                         <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
-
                     </ul>
                     <!--2a coluna-->
                     <a href="#" class="botões__ancora">Saiba mais</a>
@@ -116,6 +115,8 @@
                     <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Livro sobre node.js"></div>
                     <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
                     <div class="swiper-slide"><img src="img/Tuning.svg" alt="Livro sobre tuning de codigo"></div>
+                    <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -128,7 +129,69 @@
                 <!-- <div class="swiper-scrollbar"></div> -->
             </div>
 
+            <div class="autor__card">                      
+                <div class="autor__card__descrição">                      
+                    <div class="autor__descrição">
+                        <div class="autor__avaliação">
+                            <img class="autor__estrela" src="img/Star.svg" alt="estrela 1 de 5">
+                            <img class="autor__estrela" src="img/Star.svg" alt="estrela 2 de 5">
+                            <img class="autor__estrela" src="img/Star.svg" alt="estrela 3 de 5">
+                            <img class="autor__estrela" src="img/Star.svg" alt="estrela 4 de 5">
+                            <img class="autor__estrela" src="img/Star.svg" alt="estrela 5 de 5">
+                        </div>
+                        <h3 class="autor__titulo">Autora do Mês</h3>
+                        <h2 class="autor__nome">Juliana Agarikov</h2>
+                        <p class="autor__texto">Analista de sistemas e escritora , Juliana é especialista em front-end.</p>
+                    </div>
+                    <img class="autor__foto" src="img/Perfil-escritora.svg" alt="juliana Agarikov">
+                </div>
+                <div class="autor__card__botões">
+                    <ul class="autor__botões">
+                        <li class="autor__botões__item"><img src="img/Favoritos.svg" alt="Favoritar autor"></li>
+                        <li class="autor__botões__item"><img src="img/Compras.svg" alt="Adicionar livros do autor no carrinho de compras"></li>
+                    </ul>
+                    <a href="#" class="autor__botões__ancora">Saiba Mais</a>
+                </div>
+            </div>
         </section>
+
+        <section class="tópicos">
+            <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="tópicos__lista">
+                <li class="tópicos__item">
+                    <a href="#" class="tópicos__link">Android</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="#" class="tópicos__link">Marketing Digital</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="#" class="tópicos__link">Agile</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="#" class="tópicos__link">Startups</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="#" class="tópicos__link">HTML & CSS</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="#" class="tópicos__link">Python</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="#" class="tópicos__link">OO</a>
+                </li>
+                <li class="tópicos__item">
+                    <a href="#" class="tópicos__link">JAVA</a>
+                </li>
+            </ul>
+        </section>
+        <section class="contato">
+            <h2 class="contato__titulo">Fique por dentro!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="pesquisa">
+                <input class="contato__banner__pesquisa" type=search placeholder="Cadastre seu e-mail">
+            </div>
+        </section>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> <!---swipe.js--->
         <script>const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
