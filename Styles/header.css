@@ -58,3 +58,7 @@
 .container__botao{
     display: none;
 }
+<!--media queries, define alterações com base na resolução de tela-->
+@media screen and (min-width:1024px){
+    
+}
