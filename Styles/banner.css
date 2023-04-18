@@ -34,3 +34,28 @@
     color: var(--branco);
     background: url("../img/Lupa.svg") no-repeat;
 }
+
+@media screen and (min-width: 1024px){
+    .banner__titulo{
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .banner__texto{
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .banner{
+        text-align: center;
+    }
+    
+    .banner__pesquisa{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        width: 50%;
+    }
+}
